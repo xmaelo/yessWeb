@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom';
 //import Icon from '@material-tailwind/react/Icon';
 import H6 from '@material-tailwind/react/Heading6';
 import logo from '../logo.svg';
-import { Icon } from '@iconify/react';
-
+import  { AiOutlineHome,} from 'react-icons/ai' 
+import {IoIosHome} from 'react-icons/io'
+import {FaLaptopCode, FaBook} from 'react-icons/fa'
+import {MdAddIcCall} from 'react-icons/md'
 export default function Header() {
     const [showSidebar, setShowSidebar] = useState('-left-64');
 
@@ -38,7 +40,9 @@ export default function Header() {
                                 className={"py-4 px-2 text-primary  font-semibold"}
                             >
                                 <div  className={(addedClass['Accueil']? "fadeIn": "fadeOut")+ " flex justify-center"}>
-                                    <Icon icon="ant-design:home-filled" className="text-2xl"/>
+                                <div className="Square"> 
+                                    <IoIosHome className="text-xl"/>
+                                    </div>
                                 </div>
                                 Accueil
                                 <hr class={'trans--grow hr0 '+ (addedClass['Accueil'] && " grow line-color-change")}/>
@@ -50,10 +54,26 @@ export default function Header() {
                                 className={"py-4 px-2 text-primary  font-semibold"}
                             >
                                 <div  className={(addedClass['Services']? "fadeIn": "fadeOut")+ " flex justify-center"}>
-                                    <Icon icon="clarity:tools-solid" className="text-2xl" />
+                                    <div className="Square"> 
+                                    <FaLaptopCode className="text-xl" />
+                                    </div>
                                 </div>
                                 Nos services
                                 <hr class={'trans--grow hr0 '+ (addedClass['Services'] && " grow line-color-change")}/>
+                            </NavLink>
+                            <NavLink
+                                to="/"
+                                exact
+                                onClick={()=>setAddedClass({Histoire: true})}
+                                className={"py-4 px-2 text-primary  font-semibold"}
+                            >
+                                <div  className={(addedClass['Histoire']? "fadeIn": "fadeOut")+ " flex justify-center"}>
+                                <div className="Square"> 
+                                    <FaBook className="text-xl"/>
+                                    </div>
+                                </div>
+                                Notre histoire
+                                <hr class={'trans--grow hr0 '+ (addedClass['Histoire'] && " grow line-color-change")}/>
                             </NavLink>
                             <NavLink
                                 to="/"
@@ -62,12 +82,14 @@ export default function Header() {
                                 className={"py-4 px-2 text-primary  font-semibold"}
                             >
                                 <div  className={(addedClass['Appel']? "fadeIn": "fadeOut")+ " flex justify-center"}>
-                                   
-                                    <Icon icon="eva:phone-call-fill" className="text-2xl"/>
+                                <div className="Square"> 
+                                    <MdAddIcCall  className="text-xl"/>
                                 </div>
-                                Scheduler un appel
+                                </div>
+                                Céduler un appel
                                 <hr class={'trans--grow hr0 '+ (addedClass['Appel'] && " grow line-color-change")}/>
                             </NavLink>
+
 						</div>
 					</div>
 					<div class="hidden md:flex items-center space-x-3 ">

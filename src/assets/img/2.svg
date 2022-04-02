@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="245" height="255" viewBox="0 0 245 255">
+  <defs>
+    <clipPath id="clip-_2">
+      <rect width="245" height="255"/>
+    </clipPath>
+  </defs>
+  <g id="_2" data-name="2" clip-path="url(#clip-_2)">
+    <rect width="245" height="255" fill="#fff"/>
+    <text id="_2_" data-name="2 " transform="translate(128.412 169.441)" fill="none" stroke="#86e7fd" stroke-width="4" font-size="142" font-family="Poppins-ExtraBold, Poppins" font-weight="800"><tspan x="-53.96" y="0">2 </tspan></text>
+    <path id="Tracé_80" data-name="Tracé 80" d="M176.279,2186,53.9,2300.618" transform="translate(7.412 -2165.559)" fill="none" stroke="#86e7fd" stroke-width="4"/>
+    <path id="Tracé_81" data-name="Tracé 81" d="M176.279,2186,53.9,2300.618" transform="translate(7.412 -2115.559)" fill="none" stroke="#86e7fd" stroke-width="4"/>
+    <path id="Tracé_82" data-name="Tracé 82" d="M176.279,2186,53.9,2300.618" transform="translate(7.412 -2066.059)" fill="none" stroke="#86e7fd" stroke-width="4"/>
+  </g>
+</svg>

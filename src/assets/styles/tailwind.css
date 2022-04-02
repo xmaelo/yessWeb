@@ -565,6 +565,10 @@ video {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
+.text-xl{
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
 .font-light{
 	font-weight: 300;
 }
@@ -577,7 +581,7 @@ video {
 }
 .text-primary{
 	--tw-text-opacity: 1;
-	color: rgba(0, 150, 250, var(--tw-text-opacity));
+	color: rgba(0, 64, 255, var(--tw-text-opacity));
 }
 .outline-none{
 	outline: 2px solid transparent;
@@ -2124,7 +2128,7 @@ video {
 hr{
     padding: 2px 0;
     border: none;
-    background-color: rgb(250, 150, 0);
+    background-color:#86E7FD;
     
 }
 .trans--grow{ /* For Safari 3.1 to 6.0 */
@@ -2137,7 +2141,8 @@ hr{
     margin-left: 50%;
 }
 .line-color-change{
-    background-color: rgb(0, 150, 250);
+    background-color:#86E7FD;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .fadeOut{
     opacity:0;
@@ -2151,9 +2156,17 @@ hr{
     transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
 
 }
+.Square{
+    height:auto; 
+    width:auto;
+    background-color: #86E7FD;
+    padding:3px; 
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 .hover\:text-primary:hover{
 	--tw-text-opacity: 1;
-	color: rgba(0, 150, 250, var(--tw-text-opacity));
+	color: rgba(0, 64, 255, var(--tw-text-opacity));
 }
 @media (min-width: 768px){
 	.md\:ml-64{
