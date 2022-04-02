@@ -1,0 +1,55 @@
+/*!
+=========================================================
+* Material Tailwind Dashboard React - v1.1.0
+=========================================================
+* Product Page: https://www.creative-tim.com/product/material-tailwind-dashboard-react
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/material-tailwind-dashboard-react/blob/main/LICENSE.md)
+* Coded by Creative Tim
+=========================================================
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '@material-tailwind/react/tailwind.css';
+
+
+
+hr{
+    padding: 2px 0;
+    border: none;
+    background-color: rgb(250, 150, 0);
+    
+}
+
+
+.trans--grow{
+    -webkit-transition: all 0.5s ease-in-out; /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s  ease-in-out;
+
+    width : 0;
+}
+
+.grow{
+    width:50%;
+    margin-left: 50%;
+}
+
+.line-color-change{
+    background-color: rgb(0, 150, 250);
+}
+
+.fadeOut{
+    opacity:0;
+    width:10;
+    height:10;
+    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+
+}
+.fadeIn{
+    opacity:1;
+    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}
