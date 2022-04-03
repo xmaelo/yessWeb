@@ -10,7 +10,7 @@ function App() {
     return (
         <>
             <Header />
-                <div className="md:ml-64">
+                <div className="">
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Redirect from="*" to="/" />
