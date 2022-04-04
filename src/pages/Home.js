@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 import Advantage from "../components/Advantage"
+import Realisations from "../components/Realisations"
 export default function Home() {
 
     useEffect(()=>{
@@ -11,7 +12,8 @@ export default function Home() {
 
     return (
         <div className='bg-white'>
-        <Advantage/>
+            <Realisations/>
+            <Advantage/>
 
         </div>
     );

@@ -14,6 +14,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import '@material-tailwind/react/tailwind.css';
+
+@supports (-webkit-text-stroke: 5px #0040FF) {
+    .outlined {
+      -webkit-text-stroke: 1.5px #0040FF;
+      -webkit-text-fill-color: white;
+    }
+  }
+  
 .NavigationBar{
     z-index:10;
     position:fixed;
@@ -201,6 +209,14 @@ color:#0040FF;
     width:auto;
     background-color: #86E7FD;
     padding:3px; 
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.Square2{
+    height:auto; 
+    width:auto;
+    background-color: #86E7FD;
+    padding:10px; 
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }

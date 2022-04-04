@@ -28,8 +28,8 @@ export default function Header() {
     return (
         <div className='header-website'>
        
-            <nav className="NavigationBar">
-                <div class="max-w-6xl mx-auto px-4">
+            <nav className="fixed  z-40">
+                <div class="max-w-6xl  px-4">
                     <div class="flex justify-between">
                         <div class="flex space-x-4">
                             <div>
