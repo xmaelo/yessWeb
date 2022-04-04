@@ -1,9 +1,6 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-//import Icon from '@material-tailwind/react/Icon';
-import H6 from '@material-tailwind/react/Heading6';
-import logo from '../assets/img/logo.PNG';
-import  { AiOutlineHome,} from 'react-icons/ai' 
+import { NavLink } from 'react-router-dom'
+import logo from 'assets/img/LogoWhite.png'
 import {IoIosHome} from 'react-icons/io'
 import {FaLaptopCode, FaBook} from 'react-icons/fa'
 import {MdAddIcCall} from 'react-icons/md'
@@ -24,13 +21,13 @@ export default function Header() {
 
     return (
         <div className='header-website'>
-            <nav class="">
+            <nav className="NavigationBar">
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="flex justify-between">
-                        <div class="flex space-x-7">
+                        <div class="flex space-x-4">
                             <div>
                                 <a href="#" class="flex items-center py-4 px-2">
-                                    <img src={logo} alt="Logo" class="w-48 rounded-full pt-5"/>
+                                    <img src={logo} style={{width:200, marginTop:24,marginRight:250}}/>
                                 </a>
                                     
                             </div>
@@ -39,56 +36,56 @@ export default function Header() {
                                     to="/"
                                     onClick={()=>setAddedClass({Accueil: true})}
                                     exact
-                                    className={"py-4 px-2 text-white  font-semibold"}
+                                    className={"py-4 px-3 text-white  font-semibold"}
                                 >
                                     <div  className={(addedClass['Accueil']? "fadeIn": "fadeOut")+ " flex justify-center"}>
                                     <div className="Square"> 
-                                        <IoIosHome className="text-xl"/>
+                                        <IoIosHome className="text-xl" color={"#0040FF"}/>
                                         </div>
                                     </div>
-                                    Accueil
+                                    <span>Accueil</span>
                                     <hr class={'trans--grow hr0 '+ (addedClass['Accueil'] && " grow line-color-change")}/>
                                 </NavLink>
                                 <NavLink
                                     to="/"
                                     exact
                                     onClick={()=>setAddedClass({Services: true})}
-                                    className={"py-4 px-2 text-white  font-semibold"}
+                                    className={"py-4 px-3 text-white  font-semibold"}
                                 >
                                     <div  className={(addedClass['Services']? "fadeIn": "fadeOut")+ " flex justify-center"}>
                                         <div className="Square"> 
-                                        <FaLaptopCode className="text-xl" />
+                                        <FaLaptopCode className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    Nos services
+                                    <span>Nos services</span>
                                     <hr class={'trans--grow hr0 '+ (addedClass['Services'] && " grow line-color-change")}/>
                                 </NavLink>
                                 <NavLink
                                     to="/"
                                     exact
                                     onClick={()=>setAddedClass({Histoire: true})}
-                                    className={"py-4 px-2 text-white  font-semibold"}
+                                    className={"py-4 px-3 text-white  font-semibold"}
                                 >
                                     <div  className={(addedClass['Histoire']? "fadeIn": "fadeOut")+ " flex justify-center"}>
                                     <div className="Square"> 
-                                        <FaBook className="text-xl"/>
+                                        <FaBook className="text-xl" color={"#0040FF"}/>
                                         </div>
                                     </div>
-                                    Notre histoire
+                                    <span>Notre histoire</span>
                                     <hr class={'trans--grow hr0 '+ (addedClass['Histoire'] && " grow line-color-change")}/>
                                 </NavLink>
                                 <NavLink
                                     to="/"
                                     exact
                                     onClick={()=>setAddedClass({Appel: true})}
-                                    className={"py-4 px-2 text-white  font-semibold"}
+                                    className={"py-4 px-3 text-white  font-semibold"}
                                 >
                                     <div  className={(addedClass['Appel']? "fadeIn": "fadeOut")+ " flex justify-center"}>
                                     <div className="Square"> 
-                                        <MdAddIcCall  className="text-xl"/>
+                                        <MdAddIcCall  className="text-xl" color={"#0040FF"}/>
                                     </div>
                                     </div>
-                                    Céduler un appel
+                                    <span>Céduler un appel</span>
                                     <hr class={'trans--grow hr0 '+ (addedClass['Appel'] && " grow line-color-change")}/>
                                 </NavLink>
 
@@ -121,7 +118,7 @@ export default function Header() {
             </nav>
             <div className='container mx-auto px-4 pt-32'>
                 <div class="grid md:grid-cols-2  gap-4 text-white">
-                    <div>
+                    <div className="HeaderTextButton">
                         <h1 className='text-4xl font-semibold'>
                             L'agence web ...
                         </h1>
@@ -131,19 +128,9 @@ export default function Header() {
                         www.google.com unexpectedly closed the connection.
                         </p>
                         <br/>
-                        <Button
-                            color="lightBlue"
-                            buttonType="filled"
-                            size="regular"
-                            rounded={false}
-                            block={false}
-                            iconOnly={false}
-                            upperCase={false}
-                            ripple="light"
-                            className="px-32"
-                        >
-                            Ceduler un appel
-                        </Button>
+                        <button className="Button">
+                        <span className="ButtonText">Planifier un appel</span>
+                        </button>
                     </div>
 
                     <div>

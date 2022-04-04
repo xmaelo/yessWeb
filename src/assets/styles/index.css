@@ -17,17 +17,49 @@
 
 
 
+span{
+font-family: 'Poppins-Bold',arial, sans-serif;
+
+}
+
 hr{
     padding: 2px 0;
     border: none;
     background-color:#86E7FD;
     
 }
+.Button{
+    width:200px;
+    background-color:#86E7FD;
+    text-decoration: none !important;
+    border: none !important;
+    height:50px;
+    font-family: 'Poppins-Bold','arial', 'sans-serif'; 
+    border-radius: 8px;
+    outline-color: none !important;
+    outline: none !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.ButtonText{
+color:#0040FF;
+}
+.Button:hover{
+   background-color:#B6E6F1;
+
+}
+.HeaderTextButton{
+    margin-left: 70px;
+    
+}
+.NavigationBar{
+    margin-bottom: -100px;
+}
 
 .header-website{
     background-image: url(../img/BackgroundHeader.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    height:800px;
     background-position: bottom;
     padding-bottom: 270px;
 }
@@ -69,3 +101,18 @@ hr{
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
+@font-face{
+    font-family:'Poppins-Bold';
+    src:url('./../Font/Poppins-Bold.ttf') format('truetype');
+    font-family:'Poppins-BoldItalic';
+    src: url('./../Font/Poppins-BoldItalic.ttf') format('truetype');
+    font-family:'Poppins-Medium';
+    src: url('./../Font/Poppins-Medium.ttf') format('truetype');
+    font-family:'Poppins-MediumItalic';
+    src: url('./../Font/Poppins-MediumItalic.ttf') format('truetype');
+    font-family:'Poppins-Regular';
+    src: url('./../Font/Poppins-Regular.ttf') format('truetype');
+    font-family:'Poppins-SemiBold';
+    src: url('./../Font/Poppins-SemiBold.ttf') format('truetype');
+    } 
