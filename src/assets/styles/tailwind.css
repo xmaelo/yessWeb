@@ -512,9 +512,6 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
-.mr-2{
-	margin-right: 0.5rem;
-}
 .flex{
 	display: flex;
 }
@@ -529,9 +526,6 @@ video {
 }
 .w-6{
 	width: 1.5rem;
-}
-.w-96{
-	width: 24rem;
 }
 .max-w-6xl{
 	max-width: 72rem;
@@ -620,10 +614,6 @@ video {
 .text-xl{
 	font-size: 1.25rem;
 	line-height: 1.75rem;
-}
-.text-4xl{
-	font-size: 2.25rem;
-	line-height: 2.5rem;
 }
 .font-light{
 	font-weight: 300;
@@ -2185,9 +2175,113 @@ video {
 .lg\:justify-start{justify-content:flex-start}
 .lg\:px-36{padding-left:9rem;padding-right:9rem}
 .lg\:text-left{text-align:left}}
+.NavigationBar{
+    z-index:10;
+    position:fixed;
+}
+.Movin{
+    animation-name : mymove;
+    animation-iteration-count : infinite;
+    animation-direction : alternate;
+    animation-duration : 2s;
+}
+@keyframes mymove {
+    from {transform: translateY(0px);}
+    to {transform: translateY(40px);}
+  }
 span{
 font-family: 'Poppins-Bold',arial, sans-serif;
 
+}
+.Application{
+    z-index:-2;
+    margin-top: -300px;
+    margin-bottom: 200px;
+    width:500px;
+    margin-left: 100px;
+    animation-name: applicationmobilemove;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-duration: 10s;
+}
+@keyframes applicationmobilemove {
+    from {transform: translateX(-200px);}
+    to {transform: translateX(200px);}
+
+  }
+.Elementor{
+    z-index:-1;
+    margin-Top: 10px;
+    margin-left: 300px;
+    width:400px;
+    animation-name: elementormove;
+    animation-iteration-count: infinite;
+    transition: all 0.5s  ease-in-out;
+    animation-direction:alternate-reverse;
+    animation-duration: 10s;
+}
+@keyframes elementormove {
+    from {transform: translateY(20px);}
+    50% {transform:translateX(100px);}
+    to {transform: translateX(40px);}
+
+  }
+.ReactNative{
+    z-index:-10; 
+    margin-top: -500px;
+    margin-left: 800px;
+    width:400px;
+}
+.Seo{
+    z-index:-10; 
+    margin-top: 50px;
+    margin-left: 800px;
+
+}
+.Shopify{
+    z-index:-10; 
+    margin-top: 260px;
+    margin-left: 800px;  
+    width:200px
+}
+.Stratégie{
+    z-index:-10;
+    margin-top:-220px;
+    margin-left: 500px;
+    width:400px;
+}
+.Wordpress{
+    z-index:-10;
+    width:300px;
+    margin-top:-50px ;
+}
+.MainSection{
+    display:flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+    z-index:1;
+}
+.MainTitle{
+    font-family:'Poppins-Bold',arial, sans-serif;
+    font-size: 36px;
+    color:white;
+    margin-top: 10px;
+}
+.MainPoint{
+    color:#86E7FD;
+}
+.MainParagraph{
+    font-size: 18px;
+    font-family:'Poppins-Medium',arial, sans-serif; 
+    color:white;
+}
+.MainSpecialWord{
+    color:#86E7FD;
+}
+.IMG{
+    width:360px;
+    margin-top: 100px;
 }
 hr{
     padding: 2px 0;
@@ -2206,20 +2300,19 @@ hr{
     outline-color: none !important;
     outline: none !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index:2;
+    position:absolute;
 }
 .ButtonText{
 color:#0040FF;
 }
 .Button:hover{
    background-color:#B6E6F1;
-
+   
 }
 .HeaderTextButton{
     margin-left: 70px;
     
-}
-.NavigationBar{
-    margin-bottom: -100px;
 }
 .header-website{
     background-image: url(../img/BackgroundHeader.svg);

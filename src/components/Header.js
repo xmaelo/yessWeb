@@ -5,8 +5,14 @@ import {IoIosHome} from 'react-icons/io'
 import {FaLaptopCode, FaBook} from 'react-icons/fa'
 import {MdAddIcCall} from 'react-icons/md'
 import Button from "@material-tailwind/react/Button";
-import headerImg from '../assets/img/SVGHEADER.svg'
-
+import headerImg from '../assets/img/SVGHEADER.svg'; 
+import Elementor from './../assets/img/Elementor.png'; 
+import Application from './../assets/img/Application mobile.png';
+import ReactNative from './../assets/img/React native.png';
+import Seo from './../assets/img/SEO.png';
+import Shopify from './../assets/img/Shopify.png'; 
+import Stratégie from './../assets/img/Stratégie marketing.png'; 
+import Wordpress from './../assets/img/Wordpress.png';
 export default function Header() {
     const [showSidebar, setShowSidebar] = useState('-left-64');
 
@@ -21,6 +27,7 @@ export default function Header() {
 
     return (
         <div className='header-website'>
+       
             <nav className="NavigationBar">
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="flex justify-between">
@@ -117,15 +124,15 @@ export default function Header() {
                 </div>
             </nav>
             <div className='container mx-auto px-4 pt-32'>
-                <div class="grid md:grid-cols-2  gap-4 text-white">
+                <div className="MainSection">
                     <div className="HeaderTextButton">
-                        <h1 className='text-4xl font-semibold'>
-                            L'agence web ...
+                        <h1 className="MainTitle">
+                        L'agence web là pour vous<br/>avec vous<span className="MainPoint">.</span>
                         </h1>
-                        <p className='py-10'>
-                        www.google.com unexpectedly closed the connection.
-                        www.google.com unexpectedly closed the connection.
-                        www.google.com unexpectedly closed the connection.
+                        <p className='MainParagraph'>
+                        Notre <span className="MainSpecialWord">objectif</span> est de venir compléter la ressource<br/>
+                        manquante à votre <span className="MainSpecialWord">entreprise</span> pour votre <span className="MainSpecialWord">présence</span><br/>
+                        sur le <span className="MainSpecialWord">web</span> selon vos <span className="MainSpecialWord">valeurs</span> et votre <span className="MainSpecialWord">vision</span>.
                         </p>
                         <br/>
                         <button className="Button">
@@ -134,10 +141,18 @@ export default function Header() {
                     </div>
 
                     <div>
-                        <img src={headerImg} alt="Logo" class="w-96 mr-2"/>
+                        <img src={headerImg} alt="Logo" className="IMG"/>
                     </div>
                 </div>
             </div>
+            <img src={Application} className="Application"/>
+            <img src={Elementor} className="Elementor"/> 
+            <img src={ReactNative} className="ReactNative"/> 
+            <img src={Seo} className="Seo"/> 
+            <img src={Shopify} className="Shopify"/> 
+            <img src={Stratégie} className="Stratégie Marketing"/> 
+            <img src={Wordpress} className="Wordpress"/> 
+            
         </div>
     );
 }

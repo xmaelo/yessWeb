@@ -16,7 +16,7 @@ export default function Advantage() {
         <div className='container mx-auto py-10 bg-white'>
             <div class="grid md:grid-cols-2  gap-4 text-primary text-center">
                 <div>
-                    <img src={advantageImg} alt="Logo" class="mr-2"/>
+                    <img src={advantageImg} alt="Logo" className="Movin"/>
                 </div>
                 <div>
                     <h2 className='text-3xl'>
