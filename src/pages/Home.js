@@ -10,6 +10,7 @@ import StoryImg from './../assets/img/STORY.png'
 import Photo1 from './../assets/img/Photo1.png'
 import Photo2 from './../assets/img/Photo2.png'
 import Photo3 from './../assets/img/Photo3.png'
+import contactImg from './../assets/img/Contact.png'
 import './Home.css'
 import { AiFillForward } from 'react-icons/ai';
 import { AiFillBackward } from 'react-icons/ai';
@@ -145,7 +146,10 @@ export default function Home() {
         
         <h3 className="SecondContactTitle">Planifier un appel avec un expert.</h3>
         <div>
-        
+        <img src={contactImg}/>
+        <p className="paragraphContact"><span>L’expert prendra le temps avec vous d’analyser vos besoins</span> selon<br/> 
+        votre entreprise et votre secteur d’activités. Il pourra ensuite<br/>
+        <span>vous proposez une solution optimale selon votre vision.</span> </p>
         </div>
         </div>
     );
