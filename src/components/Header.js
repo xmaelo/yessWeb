@@ -145,14 +145,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <img src={Application} className="Application"/>
-            <img src={Elementor} className="Elementor"/> 
-            <img src={ReactNative} className="ReactNative"/> 
-            <img src={Seo} className="Seo"/> 
-            <img src={Shopify} className="Shopify"/> 
-            <img src={Stratégie} className="Stratégie Marketing"/> 
-            <img src={Wordpress} className="Wordpress"/> 
-            
+        
         </div>
     );
 }

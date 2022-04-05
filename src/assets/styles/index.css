@@ -21,88 +21,143 @@
       -webkit-text-fill-color: white;
     }
   }
-  
 .NavigationBar{
     z-index:10;
     position:fixed;
 }
-.Movin{
-    animation-name : mymove;
-    animation-iteration-count : infinite;
-    animation-direction : alternate;
-    animation-duration : 2s;
+.BackgroundWord{
+z-index:-10;
+opacity: 0.5;
 }
-
-@keyframes mymove {
-    from {transform: translateY(0px);}
-    to {transform: translateY(40px);}
+.Shopify{
+    font-family:'Poppins-Bold',arial, sans-serif ;
+    color:transparent; 
+    font-size: 40px;
+    
+    margin-left:200px;
+    margin-top: -20px;
+}
+@supports (-webkit-text-stroke: 2px #86E7FD){
+  .Shopify{
+    -webkit-text-stroke: 2px #86E7FD;
   }
-
-span{
-font-family: 'Poppins-Bold',arial, sans-serif;
-
 }
-.Application{
-    z-index:-2;
-    margin-top: -300px;
-    margin-bottom: 200px;
-    width:500px;
-    margin-left: 100px;
+.AppMobile{
+    font-family:'Poppins-Bold',arial, sans-serif ;
+    color:transparent; 
+    font-size: 50px;
+    margin-top: -400px;
+    margin-left:100px;
     animation-name: applicationmobilemove;
     animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-duration: 10s;
+    animation-duration: 60s;
+}
+@supports (-webkit-text-stroke: 2px #86E7FD){
+  .AppMobile{
+    -webkit-text-stroke: 2px #86E7FD;
+  }
 }
 @keyframes applicationmobilemove {
     from {transform: translateX(-200px);}
     to {transform: translateX(200px);}
 
   }
-.Elementor{
-    z-index:-1;
-    margin-Top: 10px;
+.Wordpress{
+    font-family:'Poppins-Bold',arial, sans-serif ;
+    color:transparent; 
+    font-size: 60px;
+
     margin-left: 300px;
-    width:400px;
+    margin-top: -20px;
+}
+@supports (-webkit-text-stroke: 2px #86E7FD){
+.Wordpress{
+    -webkit-text-stroke: 2px #86E7FD;
+  }
+}
+.Marketing{
+    font-family:'Poppins-Bold',arial, sans-serif ;
+    color:transparent; 
+    font-size: 50px;
+    margin-left:700px;
+    animation-name: MarketingMove;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-duration: 60s;
+}
+@supports (-webkit-text-stroke: 2px #86E7FD){
+  .Marketing{
+    -webkit-text-stroke: 2px #86E7FD;
+  }
+}
+@keyframes MarketingMove {
+    from {transform: translateY(20px);}
+    25% {transform:translateX(50px);}
+    50%{transform:translateY(30px);}
+    75%{transform:translateX(60px);}
+    to {transform: translateY(40px);}
+
+}
+.Elementor{
+    font-family:'Poppins-Bold',arial, sans-serif ;
+    color:transparent; 
+    font-size: 60px;
+    margin-left:800px;
     animation-name: elementormove;
     animation-iteration-count: infinite;
-    transition: all 0.5s  ease-in-out;
     animation-direction:alternate-reverse;
-    animation-duration: 10s;
+    animation-duration: 60s;
+}
+@supports (-webkit-text-stroke: 2px #86E7FD){
+.Elementor{
+    -webkit-text-stroke: 2px #86E7FD;
+  }
 }
 @keyframes elementormove {
     from {transform: translateY(20px);}
     50% {transform:translateX(100px);}
     to {transform: translateX(40px);}
 
-  }
-.ReactNative{
-    z-index:-10; 
-    margin-top: -500px;
-    margin-left: 800px;
-    width:400px;
 }
-.Seo{
-    z-index:-10; 
-    margin-top: 50px;
-    margin-left: 800px;
+.React{
+    font-family:'Poppins-Bold',arial, sans-serif ;
+    color:transparent; 
+    font-size: 50px;
+    margin-left: 600px;
+    animation-name: reactmove;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-duration: 60s;
+}
+@supports (-webkit-text-stroke: 2px #86E7FD){
+  .React{
+    -webkit-text-stroke: 2px #86E7FD;
+  }
+}
+@keyframes reactmove {
+    from {transform: translateX(0);}
+    50% {transform:translateY(50px);}
+    75% {transform:translateY(0);}
+    to {transform: translateX(40px);}
 
 }
-.Shopify{
-    z-index:-10; 
-    margin-top: 260px;
-    margin-left: 800px;  
-    width:200px
+.Seo{
+    font-family:'Poppins-Bold',arial, sans-serif ;
+    color:transparent; 
+    font-size: 60px;
+  
+    
 }
-.Stratégie{
-    z-index:-10;
-    margin-top:-220px;
-    margin-left: 500px;
-    width:400px;
+@supports (-webkit-text-stroke: 2px #86E7FD){
+.Seo{
+    -webkit-text-stroke: 2px #86E7FD;
+  }
 }
-.Wordpress{
-    z-index:-10;
-    width:300px;
-    margin-top:-50px ;
+
+span{
+font-family: 'Poppins-Bold',arial, sans-serif;
+
 }
 .MainSection{
     display:flex;
@@ -131,6 +186,8 @@ font-family: 'Poppins-Bold',arial, sans-serif;
 .IMG{
     width:360px;
     margin-top: 100px;
+    z-index:10;
+
 }
 
 hr{
@@ -219,6 +276,10 @@ color:#0040FF;
     padding:10px; 
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h2{
+    font-family: 'Poppins-Bold',arial, sans-serif;  
 }
 
 @font-face{
