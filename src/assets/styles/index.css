@@ -63,55 +63,11 @@ opacity: 0.5;
     to {transform: translateX(200px);}
 
   }
-<<<<<<< Updated upstream
-.Wordpress{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-
-    margin-left: 300px;
-    margin-top: -20px;
-}
-@supports (-webkit-text-stroke: 2px #86E7FD){
-.Wordpress{
-    -webkit-text-stroke: 2px #86E7FD;
-  }
-}
-.Marketing{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 50px;
-    margin-left:700px;
-    animation-name: MarketingMove;
-    animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
-    animation-duration: 60s;
-}
-@supports (-webkit-text-stroke: 2px #86E7FD){
-  .Marketing{
-    -webkit-text-stroke: 2px #86E7FD;
-  }
-}
-@keyframes MarketingMove {
-    from {transform: translateY(20px);}
-    25% {transform:translateX(50px);}
-    50%{transform:translateY(30px);}
-    75%{transform:translateX(60px);}
-    to {transform: translateY(40px);}
-
-}
-.Elementor{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-    margin-left:800px;
-=======
 .Elementor{
     z-index:-1;
     margin-Top: 10px;
     margin-left: 200px;
     width:400px;
->>>>>>> Stashed changes
     animation-name: elementormove;
     animation-iteration-count: infinite;
     animation-direction:alternate-reverse;
@@ -150,20 +106,11 @@ opacity: 0.5;
     to {transform: translateX(40px);}
 
 }
-<<<<<<< Updated upstream
-.Seo{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-  
-    
-=======
 .Shopify{
     z-index:-10; 
     margin-top: 260px;
     margin-left: 780px;  
     width:200px
->>>>>>> Stashed changes
 }
 @supports (-webkit-text-stroke: 2px #86E7FD){
 .Seo{

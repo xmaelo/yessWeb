@@ -6,20 +6,10 @@
    z-index:-10;
 }
 
-.StoryContainer{
-    position:absolute;
-}
-
-.TeamSection{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 100px;
-}
 
 .Rectangle{
     width:400px;
-    height:600px;
+    /* height:600px; */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     background-color:#0040FF;
     border-radius: 24px;

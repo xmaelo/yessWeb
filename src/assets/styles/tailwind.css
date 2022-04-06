@@ -548,14 +548,26 @@ video {
 .flex-col{
 	flex-direction: column;
 }
+.content-end{
+	align-content: flex-end;
+}
+.items-end{
+	align-items: flex-end;
+}
 .items-center{
 	align-items: center;
+}
+.justify-end{
+	justify-content: flex-end;
 }
 .justify-center{
 	justify-content: center;
 }
 .justify-between{
 	justify-content: space-between;
+}
+.justify-items-end{
+	justify-items: end;
 }
 .gap-4{
 	gap: 1rem;
@@ -575,6 +587,9 @@ video {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(0.75rem * var(--tw-space-x-reverse));
 	margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.justify-self-end{
+	justify-self: end;
 }
 .rounded-3xl{
 	border-radius: 1.5rem;
@@ -636,6 +651,10 @@ video {
 	padding-left: 5rem;
 	padding-right: 5rem;
 }
+.py-56{
+	padding-top: 14rem;
+	padding-bottom: 14rem;
+}
 .pt-10{
 	padding-top: 2.5rem;
 }
@@ -648,14 +667,14 @@ video {
 .pt-32{
 	padding-top: 8rem;
 }
+.pt-20{
+	padding-top: 5rem;
+}
 .pt-16{
 	padding-top: 4rem;
 }
 .pt-5{
 	padding-top: 1.25rem;
-}
-.pt-20{
-	padding-top: 5rem;
 }
 .text-left{
 	text-align: left;
@@ -663,13 +682,24 @@ video {
 .text-center{
 	text-align: center;
 }
+.text-right{
+	text-align: right;
+}
 .text-xl{
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 }
+.text-4xl{
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
 .text-5xl{
 	font-size: 3rem;
 	line-height: 1;
+}
+.text-2xl{
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 .text-7xl{
 	font-size: 4.5rem;
@@ -679,14 +709,6 @@ video {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
 }
-.text-4xl{
-	font-size: 2.25rem;
-	line-height: 2.5rem;
-}
-.text-2xl{
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
 .font-semibold{
 	font-weight: 600;
 }
@@ -695,6 +717,9 @@ video {
 }
 .font-bold{
 	font-weight: 700;
+}
+.font-extrabold{
+	font-weight: 800;
 }
 .text-primary{
 	--tw-text-opacity: 1;
@@ -707,6 +732,10 @@ video {
 .text-gray-500{
 	--tw-text-opacity: 1;
 	color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+.text-secondary{
+	--tw-text-opacity: 1;
+	color: rgba(134, 231, 253, var(--tw-text-opacity));
 }
 .shadow-xl{
 	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -2302,55 +2331,11 @@ opacity: 0.5;
     to {transform: translateX(200px);}
 
   }
-<<<<<<< Updated upstream
-.Wordpress{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-
-    margin-left: 300px;
-    margin-top: -20px;
-}
-@supports (-webkit-text-stroke: 2px #86E7FD){
-.Wordpress{
-    -webkit-text-stroke: 2px #86E7FD;
-  }
-}
-.Marketing{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 50px;
-    margin-left:700px;
-    animation-name: MarketingMove;
-    animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
-    animation-duration: 60s;
-}
-@supports (-webkit-text-stroke: 2px #86E7FD){
-  .Marketing{
-    -webkit-text-stroke: 2px #86E7FD;
-  }
-}
-@keyframes MarketingMove {
-    from {transform: translateY(20px);}
-    25% {transform:translateX(50px);}
-    50%{transform:translateY(30px);}
-    75%{transform:translateX(60px);}
-    to {transform: translateY(40px);}
-
-}
-.Elementor{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-    margin-left:800px;
-=======
 .Elementor{
     z-index:-1;
     margin-Top: 10px;
     margin-left: 200px;
     width:400px;
->>>>>>> Stashed changes
     animation-name: elementormove;
     animation-iteration-count: infinite;
     animation-direction:alternate-reverse;
@@ -2389,20 +2374,11 @@ opacity: 0.5;
     to {transform: translateX(40px);}
 
 }
-<<<<<<< Updated upstream
-.Seo{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-  
-    
-=======
 .Shopify{
     z-index:-10; 
     margin-top: 260px;
     margin-left: 780px;  
     width:200px
->>>>>>> Stashed changes
 }
 @supports (-webkit-text-stroke: 2px #86E7FD){
 .Seo{

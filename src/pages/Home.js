@@ -3,18 +3,9 @@ import Yes from './../assets/img/On dit Yess.png'
 import Advantage from "../components/Advantage"
 import Realisations from "../components/Realisations"
 import PorteFolio from "../components/PorteFolio"
-import img1 from './../assets/img/1.svg'
-import img2 from './../assets/img/2.svg'
-import img3 from './../assets/img/3.svg'
-import img4 from './../assets/img/4.svg'
-import StoryImg from './../assets/img/STORY.png'
-import Photo1 from './../assets/img/Photo1.png'
-import Photo2 from './../assets/img/Photo2.png'
-import Photo3 from './../assets/img/Photo3.png'
-import contactImg from './../assets/img/Contact.png'
+import History from "../components/History"
+import Demo from "../components/Demo"
 import './Home.css'
-import { AiFillForward } from 'react-icons/ai';
-import { AiFillBackward } from 'react-icons/ai';
 export default function Home() {
 
   useEffect(() => {
@@ -29,74 +20,8 @@ export default function Home() {
       <Realisations />
       <Advantage />
       <PorteFolio />
-
-      
-
-      <div className="StorySection">
-        <div className="StroyContainer">
-          <h3 className="StoryTitle">L'histoire YessWeb</h3>
-          <div>
-            <p><span>YessWeb</span> est une <span>agence web</span> qui a été <span>fondé</span> par trois <span>jeunes passionnés</span><br />
-              par <span>l’univers</span> du <span>web</span> voulant faire une <span>différence</span> chez les<br />
-              <span>entreprises</span> souhaitant se <span>démarquer.</span></p>
-            <img src={StoryImg} />
-          </div>
-          <h3 className="BehindYessWeb">L'équipe derrière YessWeb</h3>
-          <div className="TeamSection">
-            <div className="Rectangle">
-              <img src={Photo1} className="Photo" />
-              <span className="Name">Ismael Bienvenu</span>
-              <div>
-                <span className="JobTitle">Co-Fondateur/Développeur<br />full-stack</span>
-                <p className="Description">
-                  Ismael est le magicien de la<br />
-                  programmation chez YessWeb<br />
-                  avec plus de 10 ans d’expérience en<br />
-                  programmation, Ismael n’a aucun<br />
-                  projet qui lui fait peur, il a soif de défi et<br />
-                  est un atout clé à l’équipe.</p>
-              </div>
-            </div>
-            <div className="Rectangle">
-              <img src={Photo2} className="Photo" />
-              <span className="Name">Xavier Wells</span>
-              <div>
-                <span className="JobTitle">Co-Fondateur/Développeur<br />front-end, designer UI/UX</span>
-                <p className="Description">
-                  Ismael est le magicien de la<br />
-                  programmation chez YessWeb<br />
-                  avec plus de 10 ans d’expérience en<br />
-                  programmation, Ismael n’a aucun<br />
-                  projet qui lui fait peur, il a soif de défi et<br />
-                  est un atout clé à l’équipe.</p>
-              </div>
-            </div>
-            <div className="Rectangle">
-              <img src={Photo3} className="Photo" />
-              <span className="Name">Philippe Robichaud</span>
-              <div>
-                <span className="JobTitle">Co-Fondateur/Développement<br />des affaires</span>
-                <p className="Description">
-                  Ismael est le magicien de la<br />
-                  programmation chez YessWeb<br />
-                  avec plus de 10 ans d’expérience en<br />
-                  programmation, Ismael n’a aucun<br />
-                  projet qui lui fait peur, il a soif de défi et<br />
-                  est un atout clé à l’équipe.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 className="ContactTitle">Intéressé par nos services?</h2>
-
-      <h3 className="SecondContactTitle">Planifier un appel avec un expert.</h3>
-      <div>
-        <img src={contactImg} />
-        <p className="paragraphContact"><span>L’expert prendra le temps avec vous d’analyser vos besoins</span> selon<br />
-          votre entreprise et votre secteur d’activités. Il pourra ensuite<br />
-          <span>vous proposez une solution optimale selon votre vision.</span> </p>
-      </div>
+      <History />
+      <Demo />
     </div>
   );
 }

@@ -32,11 +32,18 @@
         <script>
             tailwind.config = {
               theme: {
+                fontFamily: {
+                  sans: ['Roboto', 'sans-serif'],
+                  serif: ['"Roboto Slab"', 'serif'],
+                  body: ['Roboto', 'sans-serif'],
+                },
                 extend: {
-                  colors: {
-                    primary: '#0040FF',
-                    blueGray: "#4F5C82"
-                  }
+                    colors:{
+                      primary: "#0040FF", 
+                      secondary:"#86E7FD",
+                      third:"#4F5C82",
+                      blueGray: "#4F5C82"
+                   }
                 }
               }
             }
