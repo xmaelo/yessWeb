@@ -10,10 +10,10 @@ import {MdAddIcCall} from 'react-icons/md'
 import Button from "@material-tailwind/react/Button";
 import advantageImg from '../assets/img/SVGAVANTAGES.svg'
 
-export default function Realisations() {
+export default function Realisations({id}) {
 
     return (
-        <div className='container mx-auto py-10 bg-white px-10'>
+        <div className='container mx-auto py-10 bg-white px-10' >
             <div class="grid md:grid-cols-3  gap-4 text-primary text-center">
                 
                 <div className='mx-auto'>
