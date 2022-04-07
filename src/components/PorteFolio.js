@@ -33,7 +33,7 @@ export default function PorteFolio() {
                         Nous allons regarder avec vous selon votre secteur d’activité la meilleure solution<br />
                         qui convient et nous allons ensuite adapter le site web à votre entreprise et votre vision.</p>
                     </div>
-                    <div className='content-end'>
+                    <div className='content-end pr-20 cursor-pointer'>
                         <p className='text-4xl text-right text-primary font-bold'>Je veux cette option</p>
                         <div className='flex justify-end justify-items-end justify-self-end'>
                             <AiFillForward  className='outlined text-5xl text-right text-primary'/>
@@ -44,7 +44,7 @@ export default function PorteFolio() {
 
                 <div className='flex pt-20'>
                     <div className='flex content-end items-end'>
-                        <div>
+                        <div className='pl-10 cursor-pointer'>
                             <p className='text-4xl text-primary font-bold'>Je veux cette option</p>
                             <div className='flex'>
                                 <AiFillBackward  className='outlined text-5xl  text-primary'/>
@@ -77,7 +77,7 @@ export default function PorteFolio() {
                     Nous allons regarder avec vous selon votre secteur d’activité la meilleure solution<br />
                     qui convient et nous allons ensuite adapter le site web à votre entreprise et votre vision.</p>
                     </div>
-                    <div className='content-end'>
+                    <div className='content-end pr-20 cursor-pointer'>
                         <p className='text-4xl text-right text-primary font-bold'>Je veux cette option</p>
                         <div className='flex justify-end justify-items-end justify-self-end'>
                             <AiFillForward  className='outlined text-5xl text-right text-primary'/>
@@ -87,7 +87,7 @@ export default function PorteFolio() {
 
                 <div className='flex pt-20'>
                     <div className='flex content-end items-end'>
-                        <div>
+                        <div className='pl-10 cursor-pointer' style={{ cursor: "pointer" }}>
                             <p className='text-4xl text-primary font-bold'>Je veux cette option</p>
                             <div className='flex'>
                                 <AiFillBackward  className='outlined text-5xl  text-primary'/>
