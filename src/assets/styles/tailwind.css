@@ -524,6 +524,15 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
+.mt-48{
+	margin-top: 12rem;
+}
+.-mt-16{
+	margin-top: -4rem;
+}
+.mt-5{
+	margin-top: 1.25rem;
+}
 .flex{
 	display: flex;
 }
@@ -539,11 +548,17 @@ video {
 .w-6{
 	width: 1.5rem;
 }
+.w-full{
+	width: 100%;
+}
 .w-64{
 	width: 16rem;
 }
 .max-w-6xl{
 	max-width: 72rem;
+}
+.grid-cols-1{
+	grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .flex-col{
 	flex-direction: column;
@@ -574,6 +589,9 @@ video {
 }
 .gap-3{
 	gap: 0.75rem;
+}
+.gap-0{
+	gap: 0px;
 }
 .gap-8{
 	gap: 2rem;
@@ -643,17 +661,17 @@ video {
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
 }
-.py-10{
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
+.py-56{
+	padding-top: 14rem;
+	padding-bottom: 14rem;
 }
 .px-20{
 	padding-left: 5rem;
 	padding-right: 5rem;
 }
-.py-56{
-	padding-top: 14rem;
-	padding-bottom: 14rem;
+.py-10{
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
 }
 .pt-10{
 	padding-top: 2.5rem;
@@ -664,11 +682,14 @@ video {
 .pl-36{
 	padding-left: 9rem;
 }
-.pt-32{
-	padding-top: 8rem;
-}
 .pt-20{
 	padding-top: 5rem;
+}
+.pt-8{
+	padding-top: 2rem;
+}
+.pt-32{
+	padding-top: 8rem;
 }
 .pt-16{
 	padding-top: 4rem;
@@ -689,37 +710,37 @@ video {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 }
-.text-4xl{
-	font-size: 2.25rem;
-	line-height: 2.5rem;
-}
 .text-5xl{
 	font-size: 3rem;
 	line-height: 1;
+}
+.text-4xl{
+	font-size: 2.25rem;
+	line-height: 2.5rem;
 }
 .text-2xl{
 	font-size: 1.5rem;
 	line-height: 2rem;
 }
-.text-7xl{
-	font-size: 4.5rem;
-	line-height: 1;
-}
 .text-3xl{
 	font-size: 1.875rem;
 	line-height: 2.25rem;
 }
+.text-7xl{
+	font-size: 4.5rem;
+	line-height: 1;
+}
 .font-semibold{
 	font-weight: 600;
+}
+.font-extrabold{
+	font-weight: 800;
 }
 .font-light{
 	font-weight: 300;
 }
 .font-bold{
 	font-weight: 700;
-}
-.font-extrabold{
-	font-weight: 800;
 }
 .text-primary{
 	--tw-text-opacity: 1;
@@ -2331,47 +2352,11 @@ opacity: 0.5;
     to {transform: translateX(200px);}
 
   }
-.Wordpress{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-
-    margin-left: 300px;
-    margin-top: -20px;
-}
-@supports (-webkit-text-stroke: 2px #86E7FD){
-.Wordpress{
-    -webkit-text-stroke: 2px #86E7FD;
-  }
-}
-.Marketing{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 50px;
-    margin-left:700px;
-    animation-name: MarketingMove;
-    animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
-    animation-duration: 60s;
-}
-@supports (-webkit-text-stroke: 2px #86E7FD){
-  .Marketing{
-    -webkit-text-stroke: 2px #86E7FD;
-  }
-}
-@keyframes MarketingMove {
-    from {transform: translateY(20px);}
-    25% {transform:translateX(50px);}
-    50%{transform:translateY(30px);}
-    75%{transform:translateX(60px);}
-    to {transform: translateY(40px);}
-
-}
 .Elementor{
-    font-family:'Poppins-Bold',arial, sans-serif ;
-    color:transparent; 
-    font-size: 60px;
-    margin-left:800px;
+    z-index:-1;
+    margin-Top: 10px;
+    margin-left: 200px;
+    width:400px;
     animation-name: elementormove;
     animation-iteration-count: infinite;
     animation-direction:alternate-reverse;
@@ -2565,6 +2550,9 @@ h2{
 	}
 	.md\:grid-cols-4{
 		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+	.md\:grid-cols-2{
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.md\:grid-cols-3{
 		grid-template-columns: repeat(3, minmax(0, 1fr));
