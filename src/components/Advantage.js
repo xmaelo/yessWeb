@@ -17,8 +17,8 @@ export default function Advantage() {
                     <img src={advantageImg} alt="Logo" className="Movin -pt-10"/>
                 </div>
                 <div className='col-span-2'>
-                    <h2 className="TitleAdvantage">
-                    Les avantages de nous choisir.
+                    <h2 className="TitleAdvantage  md:hidden lg:text-green-500">
+                        Les avantages de nous choisir.
                     </h2>
 
                     <div className='pt-10'>

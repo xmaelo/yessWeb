@@ -13,24 +13,137 @@ import Seo from './../assets/img/SEO.png';
 import Shopify from './../assets/img/Shopify.png';
 import Stratégie from './../assets/img/Stratégie marketing.png';
 import Wordpress from './../assets/img/Wordpress.png';
+import { useEffect } from 'react/cjs/react.production.min';
 export default function Header({ bgColor, change }) {
     const [showSidebar, setShowSidebar] = useState('-left-64');
 
     const [addedClass, setAddedClass] = useState({})
+    const [aside, offAside] = useState(false)
 
-
-
+    
+    //justify-end md:justify-between
     return (
         
             <div className='header-website'>
-                <header className={"fixed  z-30 w-full px-2 py-0  sm:px-4 shadow-2xl "} style={{ backgroundColor: bgColor? bgColor : "#0040FF" }}>
-                    <div className="flex items-center justify-between mx-auto max-w-7xl">
+                <header className={"fixed  md:visible  z-30 w-full px-2 py-0  sm:px-4 shadow-2xl "} style={{ backgroundColor: bgColor? bgColor : "#0040FF" }}>
+                    <div className="flex items-center justify-end md:justify-between mx-auto max-w-7xl">
 
-                        <a href="#" className="flex items-center py-4 px-2">
-                            <img src={logo} style={{ width: 200 }} />
-                        </a>
-                        <div className="flex items-center space-x-1">
-                            <ul className=" space-x-2 md:inline-flex">
+                            <a href="#" className="hidden md:flex items-center py-4 px-2">
+                                <img src={logo} style={{ width: 200 }} />
+                            </a>
+                            <div className="hidden md:flex items-center space-x-1">
+                                <ul className=" space-x-2 md:inline-flex">
+                                    <NavLink
+                                        to="/"
+                                        onClick={() => setAddedClass({ Accueil: true })}
+                                        exact
+                                        className={"py-4 px-3  font-semibold "+ (change ? "text-primary" : "text-white")}
+                                    >
+                                        <div className={(addedClass['Accueil'] ? "fadeIn" : "fadeOut") + " flex justify-center"}>
+                                            <div className="Square">
+                                                <IoIosHome className="text-xl" color={"#0040FF"} />
+                                            </div>
+                                        </div>
+                                        <span className=''>Accueil</span>
+                                        <hr className={'trans--grow hr0 ' + (addedClass['Accueil'] && " grow line-color-change")} />
+                                    </NavLink>
+                                    <NavLink
+                                        to="/"
+                                        exact
+                                        onClick={() => setAddedClass({ Services: true })}
+                                        className={"py-4 px-3 font-semibold "+ (change ? "text-primary" : "text-white")}
+                                    >
+                                        <div className={(addedClass['Services'] ? "fadeIn" : "fadeOut") + " flex justify-center"}>
+                                            <div className="Square">
+                                                <FaLaptopCode className="text-xl" color={"#0040FF"} />
+                                            </div>
+                                        </div>
+                                        <span>Nos services</span>
+                                        <hr className={'trans--grow hr0 ' + (addedClass['Services'] && " grow line-color-change")} />
+                                    </NavLink>
+                                    <NavLink
+                                        to="/"
+                                        exact
+                                        onClick={() => setAddedClass({ Histoire: true })}
+                                        className={"py-4 px-3 font-semibold "+ (change ? "text-primary" : "text-white")}
+                                    >
+                                        <div className={(addedClass['Histoire'] ? "fadeIn" : "fadeOut") + " flex justify-center"}>
+                                            <div className="Square">
+                                                <FaBook className="text-xl" color={"#0040FF"} />
+                                            </div>
+                                        </div>
+                                        <span>Notre histoire</span>
+                                        <hr className={'trans--grow hr0 ' + (addedClass['Histoire'] && " grow line-color-change")} />
+                                    </NavLink>
+                                    <NavLink
+                                        to="/"
+                                        exact
+                                        onClick={() => setAddedClass({ Appel: true })}
+                                        className={"py-4 px-3  font-semibold "+ (change ? "text-primary" : "text-white")}
+                                    >
+                                        <div className={(addedClass['Appel'] ? "fadeIn" : "fadeOut") + " flex justify-center"}>
+                                            <div className="Square">
+                                                <MdAddIcCall className="text-xl" color={"#0040FF"} />
+                                            </div>
+                                        </div>
+                                        <span>Céduler un appel</span>
+                                        <hr className={'trans--grow hr0 ' + (addedClass['Appel'] && " grow line-color-change")} />
+                                    </NavLink>
+
+                                </ul>
+                            </div>
+                        <div className="inline-flex md:hidden">
+                            <button className="flex-none px-2 drawer-toggle drawer-hamburger " onClick={()=>{offAside(!aside); console.log('clcik')}}>
+                            <span className="sr-only">toggle navigation</span>
+                            <span className="drawer-hamburger-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+
+                {/* <aside
+                    class={"transform  top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 "+('-translate-x-full')}
+                    >
+
+                </aside> */}
+
+                {/* <aside
+                    // :class="open ? 'navbar-open' : 'navbar-close'"
+                    class={"navbar transform w-64 absolute z-30 fixed overflow-x-scroll bg-gray-700 top-0  h-full  "+(aside? "navbar-open": "navbar-close")}
+                    >
+                    <div class="flex pr-2 justify-center">
+                        <button onClick={()=>{offAside(!aside); console.log('clcik')}} class="p-2 text-white text-xl font-bold">&#9747;</button>
+                    </div>
+                    <h1 class="text-xl text-center font-bold pt-5">Menu</h1>
+                    <ul class="list-none text-white text-center">
+                        <li class="my-8">
+                        <a href="#"></a>Teams
+                        </li>
+                        <li class="my-8">
+                        <a href="#"></a>Projects
+                        </li>
+                        <li class="my-8">
+                        <a href="#"></a>Favourites
+                        </li>
+                        <li class="my-8">
+                        <a href="#"></a>Notifications
+                        </li>
+                        <li class="my-8">
+                        <a href="#"></a>Members
+                        </li>
+                    </ul>
+                    </aside> */}
+
+
+                        <input type="checkbox" class="openSidebarMenu md:hidden" id="openSidebarMenu"/>
+                        <label for="openSidebarMenu" class="sidebarIconToggle md:hidden">
+                                <div class="spinner diagonal part-1"></div>
+                                <div class="spinner horizontal"></div>
+                                <div class="spinner diagonal part-2"></div>
+                        </label>
+                    <div id="sidebarMenu" className='md:hidden shadow-xl shadow-current'>
+                        <ul class="sidebarMenuInner">
+                            <li>
                                 <NavLink
                                     to="/"
                                     onClick={() => setAddedClass({ Accueil: true })}
@@ -42,9 +155,12 @@ export default function Header({ bgColor, change }) {
                                             <IoIosHome className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span className=''>Accueil</span>
+                                    <span className='title-resp'>Accueil
                                     <hr className={'trans--grow hr0 ' + (addedClass['Accueil'] && " grow line-color-change")} />
+                                    </span>
                                 </NavLink>
+                            </li>
+                            <li>
                                 <NavLink
                                     to="/"
                                     exact
@@ -56,9 +172,11 @@ export default function Header({ bgColor, change }) {
                                             <FaLaptopCode className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span>Nos services</span>
+                                    <span className='title-resp'>Nos services</span>
                                     <hr className={'trans--grow hr0 ' + (addedClass['Services'] && " grow line-color-change")} />
                                 </NavLink>
+                            </li>
+                            <li>
                                 <NavLink
                                     to="/"
                                     exact
@@ -70,9 +188,11 @@ export default function Header({ bgColor, change }) {
                                             <FaBook className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span>Notre histoire</span>
+                                    <span className='title-resp'>Notre histoire</span>
                                     <hr className={'trans--grow hr0 ' + (addedClass['Histoire'] && " grow line-color-change")} />
                                 </NavLink>
+                            </li>
+                            <li>
                                 <NavLink
                                     to="/"
                                     exact
@@ -84,23 +204,13 @@ export default function Header({ bgColor, change }) {
                                             <MdAddIcCall className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span>Céduler un appel</span>
+                                    <span className='title-resp'>Céduler un appel</span>
                                     <hr className={'trans--grow hr0 ' + (addedClass['Appel'] && " grow line-color-change")} />
                                 </NavLink>
 
-                            </ul>
-                            <div className="inline-flex md:hidden">
-                                <button className="flex-none px-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-                                    </svg>
-                                    <span className="sr-only">Open Menu</span>
-                                </button>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                </header>
 
 
                 <div className='container mx-auto px-4 pt-32'>
