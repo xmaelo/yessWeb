@@ -583,12 +583,6 @@ video {
 .w-full{
 	width: 100%;
 }
-.w-6{
-	width: 1.5rem;
-}
-.w-full{
-	width: 100%;
-}
 .w-64{
 	width: 16rem;
 }
@@ -610,9 +604,6 @@ video {
 }
 .list-none{
 	list-style-type: none;
-}
-.grid-cols-1{
-	grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-1{
 	grid-template-columns: repeat(1, minmax(0, 1fr));
