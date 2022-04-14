@@ -12,12 +12,12 @@ export default function Advantage() {
     return (
 
         <div className='container mx-auto py-4 px-10 bg-white'>
-            <div class="grid md:grid-cols-4  gap-4 text-primary text-center">
+            <div class="grid md:grid-cols-4  gap-20 text-primary text-center">
                 <div>
                     <img src={advantageImg} alt="Logo" className="Movin -pt-10"/>
                 </div>
-                <div className='col-span-2'>
-                    <h2 className="TitleAdvantage  md:hidden lg:text-green-500">
+                <div className='col-span-2 text-2xl '>
+                    <h2 className="TitleAdvantage font-bold text-5xl">
                         Les avantages de nous choisir.
                     </h2>
 

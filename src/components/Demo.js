@@ -6,9 +6,11 @@ import 'react-calendar-datetime-picker/dist/index.css'
 export default function Demo() {
     const [date, setDate] = useState(null)
 
+    
+
     return (
 
-        <div className='container mx-auto py-4 px-10 bg-white mt-48'>
+        <div className='container mx-auto py-4 px-10 bg-white mt-92'>
             <h3 className="text-5xl  font-extrabold text-primary text-center">Intéressé par nos services?</h3>
 
 
@@ -22,8 +24,12 @@ export default function Demo() {
                     <p className="text-2xl text-blueGray font-semibold pt-8"><span className='text-primary'>L’expert prendra le temps avec vous d’analyser vos besoins</span> selon
                     votre entreprise et votre secteur d’activités. Il pourra ensuite <br/>
                     <span className='text-primary'> vous proposez une solution optimale selon votre vision.</span> </p>
+                    
+                    <button className='bg-primary py-6 shadow-lg  px-20 rounded-xl text-white font-semibold mt-10'>
+                        Allons-y !
+                    </button>
 
-                    <DtCalendar onChange={setDate} withTime showTimeInput/>
+                    {/* <DtCalendar onChange={setDate} withTime showTimeInput/> */}
                 </div>
             </div>
         </div>

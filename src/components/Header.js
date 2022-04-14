@@ -136,10 +136,10 @@ export default function Header({ bgColor, change }) {
 
 
                         <input type="checkbox" class="openSidebarMenu md:hidden" id="openSidebarMenu"/>
-                        <label for="openSidebarMenu" class="sidebarIconToggle md:hidden">
-                                <div class="spinner diagonal part-1"></div>
-                                <div class="spinner horizontal"></div>
-                                <div class="spinner diagonal part-2"></div>
+                        <label for="openSidebarMenu" class="sidebarIconToggle md:hidden shadow-2xl">
+                                <div class="spinner diagonal part-1 shadow-2xl"></div>
+                                <div class="spinner horizontal shadow-2xl"></div>
+                                <div class="spinner diagonal part-2 shadow-2xl"></div>
                         </label>
                     <div id="sidebarMenu" className='md:hidden shadow-xl shadow-current'>
                         <ul class="sidebarMenuInner">
@@ -155,9 +155,9 @@ export default function Header({ bgColor, change }) {
                                             <IoIosHome className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span className='title-resp'>Accueil
-                                    <hr className={'trans--grow hr0 ' + (addedClass['Accueil'] && " grow line-color-change")} />
+                                    <span className={'title-resp ' + (addedClass['Accueil'] ? "title-resp2" : "")} >Accueil
                                     </span>
+                                    <hr className={'trans--grow hr0 ' + (addedClass['Accueil'] && " grow line-color-change")} />
                                 </NavLink>
                             </li>
                             <li>
@@ -172,7 +172,7 @@ export default function Header({ bgColor, change }) {
                                             <FaLaptopCode className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span className='title-resp'>Nos services</span>
+                                    <span className={'title-resp ' + (addedClass['Services'] ? "title-resp2" : "")}>Nos services</span>
                                     <hr className={'trans--grow hr0 ' + (addedClass['Services'] && " grow line-color-change")} />
                                 </NavLink>
                             </li>
@@ -188,7 +188,7 @@ export default function Header({ bgColor, change }) {
                                             <FaBook className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span className='title-resp'>Notre histoire</span>
+                                    <span className={'title-resp ' + (addedClass['Histoire'] ? "title-resp2" : "")}>Notre histoire</span>
                                     <hr className={'trans--grow hr0 ' + (addedClass['Histoire'] && " grow line-color-change")} />
                                 </NavLink>
                             </li>
@@ -204,7 +204,7 @@ export default function Header({ bgColor, change }) {
                                             <MdAddIcCall className="text-xl" color={"#0040FF"} />
                                         </div>
                                     </div>
-                                    <span className='title-resp'>Céduler un appel</span>
+                                    <span className={'title-resp ' + (addedClass['Appel'] ? "title-resp2" : "")}>Céduler un appel</span>
                                     <hr className={'trans--grow hr0 ' + (addedClass['Appel'] && " grow line-color-change")} />
                                 </NavLink>
 
